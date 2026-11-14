@@ -23,7 +23,7 @@ export default function Home() {
             <div>
               <span className="status">
                 <span className="dot" />
-                Currently AI/ML Intern at Teazy Tech, AI UniPod UNILAG
+                Currently AI/ML Intern at Teazy Tech, AFRETEC UNILAG
               </span>
               <div className="eyebrow mono">Goodness Oluwapelumi Oni · Lagos, Nigeria</div>
               <h1>
