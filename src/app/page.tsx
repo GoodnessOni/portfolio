@@ -114,12 +114,12 @@ export default function Home() {
           <div className="wrap">
             <div className="sec-head">
               <div>
-                <div className="label mono">Tools</div>
+                <div className="label mono">Skills</div>
                 <h2>
-                  What I reach for, <em>grouped by job.</em>
+                  Skills I build with, <em>across AI, backend and hardware.</em>
                 </h2>
               </div>
-              <p>No skill bars. Just the stack behind the projects above.</p>
+              <p>The tools and languages I use to take a product from idea to working system.</p>
             </div>
             <div className="tgrid">
               {tools.map((t) => (
