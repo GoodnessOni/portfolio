@@ -394,7 +394,7 @@ export const projects: Project[] = [
   {
     slug: "examface",
     num: "16",
-    title: "V-Log 4",
+    title: "ExamFace",
     kind: "Facial recognition exam attendance on a Raspberry Pi",
     did: "Built it end to end: a Flask app on a Raspberry Pi 4 that recognises each student's face from the lecturer's phone camera and marks them present.",
     tags: ["Flask", "face_recognition", "Raspberry Pi"],
