@@ -320,3 +320,15 @@ h2 em{color:var(--orange)}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 @media (prefers-reduced-motion:reduce){.portrait .float{animation:none}}
 @media (max-width:760px){.portrait .float{left:12px;top:auto;bottom:58px;padding:8px 12px 8px 8px}.portrait .float small{display:none}}
+
+/* portrait: subtle 3D tilt (variables written by PortraitTilt, fine pointers only) */
+.portrait{--px:0;--py:0;--rx:0deg;--ry:0deg;--go:0}
+.portrait .frame{transform:perspective(1200px) rotateY(calc(-4deg + var(--ry))) rotateX(calc(2deg + var(--rx)));will-change:transform}
+.portrait .frame img{transform:scale(1.035);translate:calc(var(--px) * -4px) calc(var(--py) * -3px)}
+.portrait .glare{position:absolute;left:-50%;top:-50%;width:200%;height:200%;pointer-events:none;z-index:1;
+  background:radial-gradient(closest-side,rgba(255,250,240,.32),rgba(255,250,240,.08) 55%,transparent 75%);
+  opacity:calc(var(--go) * .85);translate:calc(var(--px) * 22%) calc(var(--py) * 22%);mix-blend-mode:soft-light}
+.portrait .cap{z-index:2;translate:calc(var(--px) * 7px) calc(var(--py) * 5px)}
+.portrait .float{translate:calc(var(--px) * 16px) calc(var(--py) * 11px)}
+.portrait.tilting .float{box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 26px 46px -22px rgba(16,27,62,.42),0 2px 6px -2px rgba(16,27,62,.08)}
+@media (max-width:760px){.portrait .frame{transform:none}.portrait .glare{display:none}.portrait .frame img{transform:none;translate:none}}

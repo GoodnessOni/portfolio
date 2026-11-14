@@ -3,8 +3,10 @@ import Nav from "@/components/Nav";
 import HeroMesh from "@/components/HeroMesh";
 import WorkSection from "@/components/WorkSection";
 import Experience from "@/components/Experience";
+import PortraitTilt from "@/components/PortraitTilt";
 import Contact, { Halves } from "@/components/Contact";
 import { awards, tools } from "@/data/site";
+import { projects } from "@/data/projects";
 import { asset, cvPath } from "@/lib/site";
 
 export default function Home() {
@@ -60,7 +62,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="portrait">
+            <PortraitTilt>
               <div className="arcbg" />
               <div className="float">
                 <span className="medal" aria-hidden="true">
@@ -73,6 +75,7 @@ export default function Home() {
               </div>
               <div className="frame">
                 <Image src={asset("/img/portrait.webp")} alt="Portrait of Goodness Oni" width={600} height={900} priority sizes="(max-width: 760px) 100vw, 410px" />
+                <div className="glare" aria-hidden="true" />
                 <div className="cap">
                   <span className="mono">Goodness Oni / Founder</span>
                   <span className="mono" style={{ color: "var(--orange-ink)" }}>
@@ -80,7 +83,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            </div>
+            </PortraitTilt>
           </div>
           <Halves />
         </header>
@@ -158,8 +161,8 @@ export default function Home() {
                 <span>CGPA, Systems Engineering, 300 Level</span>
               </div>
               <div className="stat">
-                <b>13</b>
-                <span>Projects shipped, software and hardware</span>
+                <b>{projects.length}</b>
+                <span>Projects built, software and hardware</span>
               </div>
               <div className="stat">
                 <b>6</b>

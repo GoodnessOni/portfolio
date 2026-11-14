@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import Providers from "@/components/Providers";
-import { asset, contact, siteUrl } from "@/lib/site";
+import { absUrl, asset, contact, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const sans = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     siteName: "Goodness Oni",
     title,
     description,
-    images: [{ url: asset("/og.png"), width: 1200, height: 630, alt: "Goodness Oni, Systems thinker. AI builder." }],
+    images: [{ url: absUrl("/og.png"), width: 1200, height: 630, alt: "Goodness Oni, Systems thinker. AI builder." }],
     locale: "en_NG",
   },
-  twitter: { card: "summary_large_image", title, description, images: [asset("/og.png")] },
+  twitter: { card: "summary_large_image", title, description, images: [absUrl("/og.png")] },
   icons: {
     icon: [
       { url: asset("/favicon.svg"), type: "image/svg+xml" },
@@ -48,7 +48,7 @@ const jsonLd = {
   name: "Goodness Oluwapelumi Oni",
   alternateName: "Goodness Oni",
   url: siteUrl,
-  image: siteUrl + "/img/portrait.webp",
+  image: absUrl("/img/portrait.webp"),
   jobTitle: "Founder & CEO, OGverse Innovations; AI/ML Engineer",
   worksFor: { "@type": "Organization", name: "OGverse Innovations" },
   alumniOf: { "@type": "CollegeOrUniversity", name: "University of Lagos" },

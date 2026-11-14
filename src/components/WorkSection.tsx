@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { archive, featured, homeFilters } from "@/data/projects";
+import { archive, featured, homeFilters, projects } from "@/data/projects";
 import { covers } from "@/data/covers";
 import { contact } from "@/lib/site";
 import ProjectCard from "./ProjectCard";
@@ -51,7 +51,7 @@ export default function WorkSection() {
             </h3>
           </div>
           <Link className="btn btn-ghost btn-sm" href="/projects/">
-            All 13 projects <span className="arrow">→</span>
+            All {projects.length} projects <span className="arrow">→</span>
           </Link>
         </div>
         <div className="cards arch">

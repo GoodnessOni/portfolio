@@ -5,6 +5,7 @@ import HeroMesh from "@/components/HeroMesh";
 import ProjectsArchive from "@/components/ProjectsArchive";
 import { Halves } from "@/components/Contact";
 import { contact } from "@/lib/site";
+import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -22,7 +23,7 @@ export default function ProjectsPage() {
           <div className="wrap" style={{ position: "relative", zIndex: 2 }}>
             <div className="label mono">Project archive</div>
             <h1>
-              All 13 projects, <em>with my role on each.</em>
+              All {projects.length} projects, <em>with my role on each.</em>
             </h1>
             <p>Filter by kind of work or search by name and stack. Open any project for the case study.</p>
           </div>
