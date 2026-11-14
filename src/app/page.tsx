@@ -149,9 +149,6 @@ export default function Home() {
               <p className="body">
                 I learned web development with DSN in 2022 and AI/ML with Digital SkillUp Africa in 2025, then founded OGverse Innovations, now registered with the CAC. Today I lead product and engineering there, lead the AI/ML squad at Techstars UNILAG, and run sponsorship and partnerships work for ASES.
               </p>
-              <div className="credit">
-                Built with others: GraphSense, PayPal Hub, Vouch, Lectio and CrxRay were made with David Gilbert; GraphSense&apos;s concept is Mumeen&apos;s. Every card says who did what.
-              </div>
             </div>
             <div className="stats">
               <div className="stat navy">

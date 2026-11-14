@@ -1,4 +1,4 @@
-export type Category = "AI/ML" | "Backend" | "Hackathon" | "Engineering" | "Web3" | "With David";
+export type Category = "AI/ML" | "Backend" | "Hackathon" | "Engineering" | "Web3";
 
 export type Link = { label: string; href: string };
 
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     team: "Team of 2 · David Gilbert on frontend",
     result: { text: "PayPal AI Hackathon 2026", tone: "plain" },
     featured: true,
-    categories: ["Backend", "AI/ML", "Hackathon", "With David"],
+    categories: ["Backend", "AI/ML", "Hackathon"],
     shot: { src: "/img/shots/paypal-hub.webp", bar: "paypal-hub.vercel.app" },
     problem:
       "Subscriptions pile up quietly. People lose track of what they pay for and have no simple way to judge which ones are worth keeping against a budget.",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     team: "Team Sync, 4 people · concept by Mumeen, MATLAB build by David Gilbert",
     result: { text: "1st · AFRETEC x MathWorks", tone: "gold" },
     featured: true,
-    categories: ["Engineering", "Hackathon", "With David"],
+    categories: ["Engineering", "Hackathon"],
     clabel: "Chart to audio · MATLAB",
     problem: "Visually impaired students are locked out of charts and graphs, which carry much of what is taught in engineering and science.",
     built: [
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     team: "Team of 2 · David Gilbert on frontend",
     result: { text: "OGverse product", tone: "plain" },
     featured: true,
-    categories: ["Backend", "AI/ML", "With David"],
+    categories: ["Backend", "AI/ML"],
     shot: { src: "/img/shots/lectio.webp", bar: "lectio-web-ten.vercel.app" },
     problem:
       "Classmates each record the same lecture, then study alone from patchy audio. Nobody gets one clean, shared set of notes.",
@@ -143,7 +143,7 @@ export const projects: Project[] = [
     team: "Team project with David Gilbert",
     result: { text: "63rd of 1,600 · Squad 3.0", tone: "gold" },
     featured: true,
-    categories: ["AI/ML", "Hackathon", "With David"],
+    categories: ["AI/ML", "Hackathon"],
     clabel: "Trust score",
     problem: "Small traders have no portable record of trust, so every new buyer, supplier or lender starts from zero.",
     built: [
@@ -285,7 +285,7 @@ export const projects: Project[] = [
     team: "Team with David Gilbert",
     result: { text: "TLN Cybersecurity 2026", tone: "plain" },
     featured: false,
-    categories: ["Hackathon", "With David"],
+    categories: ["Hackathon"],
     clabel: "A to F risk grade",
     problem: "People install browser extensions without understanding the permissions and privacy risks they accept.",
     built: [
@@ -308,7 +308,7 @@ export const projects: Project[] = [
     team: "Team Kilvora, 2 people · David Gilbert led the ANSYS analysis",
     result: { text: "Top 20 of 300+ · Dangote", tone: "gold" },
     featured: false,
-    categories: ["Engineering", "Hackathon", "With David"],
+    categories: ["Engineering", "Hackathon"],
     clabel: "Mill shell and liner",
     problem: "A cement mill shell and liner lose efficiency over time, and the plant needs a clear picture of where conversion is lost.",
     built: [
@@ -394,14 +394,14 @@ export const projects: Project[] = [
   {
     slug: "examface",
     num: "16",
-    title: "ExamFace",
+    title: "V-Log 4",
     kind: "Facial recognition exam attendance on a Raspberry Pi",
     did: "Built it end to end: a Flask app on a Raspberry Pi 4 that recognises each student's face from the lecturer's phone camera and marks them present.",
     tags: ["Flask", "face_recognition", "Raspberry Pi"],
     role: "Solo build",
     team: "Solo",
     featured: false,
-    categories: ["AI/ML", "Engineering"],
+    categories: ["Engineering", "AI/ML"],
     clabel: "Face to present",
     problem: "Paper attendance at exams is slow and easy to fake, and a dedicated scanner in every hall is expensive.",
     built: [
@@ -419,5 +419,5 @@ export const projects: Project[] = [
 
 export const featured = projects.filter((p) => p.featured);
 export const archive = projects.filter((p) => !p.featured);
-export const homeFilters = ["AI/ML", "Backend", "Hackathon", "Engineering", "With David"] as const;
-export const allFilters: Category[] = ["AI/ML", "Backend", "Hackathon", "Engineering", "Web3", "With David"];
+export const homeFilters = ["AI/ML", "Backend", "Hackathon", "Engineering"] as const;
+export const allFilters: Category[] = ["AI/ML", "Backend", "Hackathon", "Engineering", "Web3"];
