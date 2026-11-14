@@ -27,7 +27,7 @@ export default function WorkSection() {
             const n = k === "All" ? featured.length : projects.filter((p) => (p.categories as string[]).includes(k)).length;
             return (
               <button key={k} type="button" className={f === k ? "on" : ""} aria-pressed={f === k} onClick={() => setF(k)}>
-                {k === "All" ? `All ${n}` : k}
+                {k === "All" ? `Featured ${n}` : k}
                 {k !== "All" && f === k ? ` ${n}` : ""}
               </button>
             );
