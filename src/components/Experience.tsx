@@ -57,9 +57,9 @@ export default function Experience() {
               <div key={r.title + r.org} className={`row${r.highlight ? " hl" : ""}`}>
                 <div className="when">{r.when}</div>
                 <div>
-                  <h4>
+                  <h3>
                     {r.title} <span>· {r.org}</span>
-                  </h4>
+                  </h3>
                   {r.body && <p>{r.body}</p>}
                 </div>
                 <div className="badge">{r.badge}</div>

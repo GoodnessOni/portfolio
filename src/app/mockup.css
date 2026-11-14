@@ -2,8 +2,8 @@
 :root{
   --cream:#fff8ea; --grid:#fcebd4; --paper:#fffdf7;
   --navy:#101b3e; --navy-deep:#080f1f; --navy-2:#1b2852;
-  --orange:#ea8417; --orange-ink:#b9620a; --gold:#eeac16;
-  --text:#101b3e; --muted:#4d5672; --faint:#8a8fa3; --line:#ecdcc0;
+  --orange:#ea8417; --orange-ink:#a35607; --gold:#eeac16;
+  --text:#101b3e; --muted:#4d5672; --faint:#6e748c; --line:#ecdcc0;
   --serif:var(--font-serif),Georgia,serif; --sans:var(--font-sans),system-ui,sans-serif; --mono:var(--font-mono),ui-monospace,monospace;
   --r:18px;
 }
@@ -126,8 +126,8 @@ h2 em{color:var(--orange)}
 .tl{border-top:1px solid var(--line)}
 .row{display:grid;grid-template-columns:170px 1fr auto;gap:28px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
 .row .when{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:5px}
-.row h4{font-size:18px;font-weight:600;letter-spacing:-.01em}
-.row h4 span{font-weight:400;color:var(--muted)}
+.row h3{font-size:18px;font-weight:600;letter-spacing:-.01em}
+.row h3 span{font-weight:400;color:var(--muted)}
 .row p{margin-top:6px;color:var(--muted);font-size:14.5px;max-width:620px}
 .row .badge{font-size:12px;color:var(--orange-ink);font-family:var(--mono);padding-top:5px;white-space:nowrap}
 .row.hl h4:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--orange);margin-right:10px;vertical-align:2px}
@@ -137,8 +137,8 @@ h2 em{color:var(--orange)}
 .tgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--cream)}
 .tgrid>div{padding:24px;border-right:1px solid var(--line)}
 .tgrid>div:last-child{border-right:0}
-.tgrid h5{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:14px}
-.tgrid h5 small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--orange-ink);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.tgrid h3{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:14px}
+.tgrid h3 small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--orange-ink);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
 .tgrid ul{list-style:none;display:flex;flex-direction:column;gap:7px;font-size:14px;color:var(--muted)}
 
 /* about */

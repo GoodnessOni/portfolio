@@ -72,7 +72,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="frame">
-                <Image src={asset("/img/portrait.webp")} alt="Portrait of Goodness Oni" width={800} height={1200} priority sizes="(max-width: 760px) 100vw, 410px" />
+                <Image src={asset("/img/portrait.webp")} alt="Portrait of Goodness Oni" width={600} height={900} priority sizes="(max-width: 760px) 100vw, 410px" />
                 <div className="cap">
                   <span className="mono">Goodness Oni / Founder</span>
                   <span className="mono" style={{ color: "var(--orange-ink)" }}>
@@ -121,10 +121,10 @@ export default function Home() {
             <div className="tgrid">
               {tools.map((t) => (
                 <div key={t.h}>
-                  <h5>
+                  <h3>
                     <small>{t.n}</small>
                     {t.h}
-                  </h5>
+                  </h3>
                   <ul>
                     {t.items.map((i) => (
                       <li key={i}>{i}</li>

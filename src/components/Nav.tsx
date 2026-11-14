@@ -8,7 +8,7 @@ export default function Nav({ home = true }: { home?: boolean }) {
   return (
     <nav className="nav" aria-label="Main">
       <div className="wrap">
-        <Link className="brand" href="/" aria-label="Goodness Oni, home">
+        <Link className="brand" href="/">
           <span className="mark" aria-hidden="true">G</span>Goodness Oni
         </Link>
         <div className="links">
