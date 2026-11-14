@@ -9,7 +9,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function WorkSection() {
   const [f, setF] = useState<string>("All");
-  const shown = f === "All" ? featured : featured.filter((p) => (p.categories as string[]).includes(f));
+  const shown = f === "All" ? featured : projects.filter((p) => (p.categories as string[]).includes(f));
   return (
     <section id="work">
       <div className="wrap">
@@ -24,7 +24,7 @@ export default function WorkSection() {
         </div>
         <div className="filters" role="group" aria-label="Filter selected work">
           {["All", ...homeFilters].map((k) => {
-            const n = k === "All" ? featured.length : featured.filter((p) => (p.categories as string[]).includes(k)).length;
+            const n = k === "All" ? featured.length : projects.filter((p) => (p.categories as string[]).includes(k)).length;
             return (
               <button key={k} type="button" className={f === k ? "on" : ""} aria-pressed={f === k} onClick={() => setF(k)}>
                 {k === "All" ? `All ${n}` : k}
