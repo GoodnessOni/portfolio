@@ -71,8 +71,7 @@ h1 em{color:var(--orange)}
 /* sections */
 section{padding:110px 0}
 .sec-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:46px}
-.label{color:var(--orange-ink);display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.label:before{content:"";width:18px;height:2px;background:var(--orange);border-radius:2px}
+.label{color:var(--orange-ink);margin-bottom:16px}
 h2{font-family:var(--serif);font-weight:400;font-size:62px;line-height:1.02;letter-spacing:-.02em;max-width:720px}
 h2 em{color:var(--orange)}
 .sec-head p{max-width:360px;color:var(--muted);font-size:15.5px}
@@ -104,7 +103,7 @@ h2 em{color:var(--orange)}
 /* awards */
 .awards{background:var(--navy);color:var(--cream);padding:0;position:relative;overflow:hidden}
 .awards .wrap{padding-top:70px;padding-bottom:70px}
-.awards .label{color:var(--gold)}.awards .label:before{background:var(--gold)}
+.awards .label{color:var(--gold)}
 .awards h2{font-size:46px;max-width:none;margin-bottom:34px}
 .awards h2 em{color:var(--gold)}
 .aw{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,248,234,.14)}
@@ -167,7 +166,7 @@ h2 em{color:var(--orange)}
 
 /* contact */
 .contact{background:var(--navy);color:var(--cream);position:relative;overflow:hidden;padding-bottom:140px}
-.contact .label{color:var(--gold)}.contact .label:before{background:var(--gold)}
+.contact .label{color:var(--gold)}
 .contact h2{font-size:84px;max-width:900px}
 .contact h2 em{color:var(--orange)}
 .contact p.sub{margin-top:18px;color:rgba(255,248,234,.72);max-width:520px;font-size:17px}
