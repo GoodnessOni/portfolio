@@ -30,10 +30,10 @@ export const experience: Record<"Leadership" | "Internships" | "Volunteering", {
 
 export const awards = [
   { b: "Winner", s: "MSSN Unboxed 2026 Innovation Pitch, PathSync" },
-  { b: "Winner", s: "IBM Bob 2.0 Hackathon, lablab.ai, Hackathon Repo Doctor" },
-  { b: "1st place", s: "AFRETEC-UNILAG Inclusive Education Challenge 3.0, MathWorks category" },
+    { b: "1st place", s: "AFRETEC-UNILAG Inclusive Education Challenge 3.0, MathWorks category" },
   { b: "Top 20", s: "Dangote Cement University Engineering Challenge 2026, of 300+" },
   { b: "1st place", s: "Wekoya x ULES Smart Study Competition 2026" },
+  { b: "$100 award", s: "IBM Bob 2.0 Hackathon participation award, lablab.ai, Hackathon Repo Doctor" },
   { b: "63rd / 1,600", s: "Squad Hackathon 3.0, Vouch" },
   { b: "Round 2", s: "Switch Global Competition 2026, Team Phos, one of 244 teams" },
   { b: "Cohort 2", s: "UNDP METI UniPods AI Innovation Programme" },

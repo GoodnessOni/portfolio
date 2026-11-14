@@ -51,7 +51,7 @@ export default function Home() {
                   <span>Leadership roles held</span>
                 </div>
                 <div>
-                  <b>4</b>
+                  <b>3</b>
                   <span>First-place finishes</span>
                 </div>
                 <div>
