@@ -2,7 +2,7 @@
 
 Personal site of Goodness Oni, AI/ML engineer and founder of OGverse Innovations.
 
-Live: https://goodnessoni.github.io/portfolio
+Live: https://engrog.tech
 
 ## Stack
 
@@ -40,12 +40,9 @@ Every push to `main` builds and publishes to GitHub Pages through `.github/workf
 
 ## Custom domain
 
-Canonical, Open Graph, Twitter, JSON-LD, robots.txt and sitemap.xml URLs all come from `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_BASE_PATH`. To move off github.io, change only these:
+The site is served at https://engrog.tech. Canonical, Open Graph, Twitter, JSON-LD, robots.txt and sitemap.xml URLs all come from `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_BASE_PATH` in `.github/workflows/deploy.yml`, plus `public/CNAME`.
 
-1. `.github/workflows/deploy.yml`: set `NEXT_PUBLIC_BASE_PATH` to `""` and `NEXT_PUBLIC_SITE_URL` to `https://your.domain`.
-2. `public/CNAME`: one line with `your.domain`. GitHub also writes this file when you add the domain under Settings → Pages → Custom domain.
-
-Do not hard-code the github.io host in page content. Shared SEO copy lives in `src/lib/site.ts`.
+Do not hard-code the host in page content. Shared SEO copy lives in `src/lib/site.ts`.
 
 ## Google Search Console
 
@@ -53,4 +50,4 @@ Do not hard-code the github.io host in page content. Shared SEO copy lives in `s
 2. Choose the HTML-tag method. Google gives you a tag like `<meta name="google-site-verification" content="TOKEN" />`.
 3. Put only the `TOKEN` (the `content` value) in `.github/workflows/deploy.yml` as `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`. `src/app/layout.tsx` reads that value and emits the meta tag at build time.
 4. Push to `main`, wait for Pages to redeploy, then click Verify in Search Console.
-5. Once verified, submit `https://goodnessoni.github.io/portfolio/sitemap.xml` (or the sitemap on the custom domain) under Sitemaps.
+5. Once verified, submit `https://engrog.tech/sitemap.xml` under Sitemaps.

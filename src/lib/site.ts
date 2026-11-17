@@ -1,7 +1,7 @@
 export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://goodnessoni.github.io/portfolio").replace(/\/$/, "");
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://engrog.tech").replace(/\/$/, "");
 
-/** Prefix a public asset path with the deploy base path (GitHub Pages serves from /portfolio). */
+/** Prefix a public asset path with the deploy base path. Empty on the custom domain (site is at the root). */
 export const asset = (p: string) => `${basePath}${p}`;
 
 /** Absolute public URL for a file in /public. siteUrl already includes the base path, so never combine it with asset(). */
@@ -19,16 +19,8 @@ export const contact = {
 
 /*
   Canonical, Open Graph, Twitter, JSON-LD, robots and sitemap URLs all
-  derive from siteUrl (and basePath) above.
-
-  To switch to a custom domain, change only these two files, then attach
-  the domain in GitHub:
-    1. .github/workflows/deploy.yml
-       NEXT_PUBLIC_BASE_PATH=""
-       NEXT_PUBLIC_SITE_URL=https://your.domain
-    2. public/CNAME  (one line: your.domain)
-       GitHub also writes this file when you add the domain under
-       Settings → Pages → Custom domain.
+  derive from siteUrl (and basePath) above, set in .github/workflows/deploy.yml
+  and public/CNAME. The live site is https://engrog.tech (root path, no /portfolio prefix).
 */
 export const seo = {
   title: "Goodness Oni · AI/ML Engineer · Systems Engineering, UNILAG",

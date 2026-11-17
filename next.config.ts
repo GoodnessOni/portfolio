@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-// GitHub Pages serves the site from /portfolio. Set NEXT_PUBLIC_BASE_PATH="" once a custom domain is attached.
+// Custom domain https://engrog.tech is served from the root, so NEXT_PUBLIC_BASE_PATH is empty.
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const nextConfig: NextConfig = {
