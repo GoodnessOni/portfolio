@@ -23,8 +23,8 @@ export const contact = {
   and public/CNAME. The live site is https://engrog.tech (root path, no /portfolio prefix).
 */
 export const seo = {
-  title: "Goodness Oni · AI/ML Engineer · Systems Engineering, UNILAG",
+  title: "Goodness Oni · Full Stack, Product Manager and AI/ML · UNILAG, Lagos",
   description:
-    "Goodness Oni is an AI/ML engineer and Systems Engineering student at UNILAG, Lagos. Founder of OGverse Innovations, he builds AI products end to end, from models to backend and payments.",
+    "Goodness Oni is a full stack developer, product manager and AI/ML engineer, and a Systems Engineering student at UNILAG, Lagos. Founder of OGverse Innovations, he shapes products and builds them: interface, API, model and payments.",
   ogImageAlt: "Goodness Oni, Systems thinker. AI builder. AI/ML engineer and Systems Engineering student at UNILAG, Lagos.",
 };

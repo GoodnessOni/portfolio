@@ -25,9 +25,9 @@ export default function Contact() {
       <div className="wrap">
         <div className="label mono">Contact</div>
         <h2>
-          Building something? <em>Let&apos;s talk.</em>
+          Hiring, building, or looking at a partnership? <em>Let&apos;s talk.</em>
         </h2>
-        <p className="sub">Open to internships, partnerships and sponsorship conversations.</p>
+        <p className="sub">Open to internships, product work, and partnership or sponsorship conversations.</p>
         <div className="mail" style={{ position: "relative" }}>
           <div className="mailbox">
             <a href={`mailto:${contact.email}`} className="mail-link">

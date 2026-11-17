@@ -25,19 +25,20 @@ export default function Home() {
                 <span className="dot" />
                 Currently AI/ML Intern at Teazy Tech, AFRETEC UNILAG
               </span>
-              <div className="eyebrow mono">Goodness Oluwapelumi Oni · Lagos, Nigeria</div>
+              <div className="eyebrow mono">Goodness Oluwapelumi Oni · Systems Engineering, UNILAG</div>
               <h1>
-                Systems thinker.
+                I build the product.
                 <br />
-                <em>AI builder.</em>
+                <em>And the system behind it.</em>
               </h1>
               <div className="roles">
                 <span>Founder &amp; CEO, OGverse Innovations</span>
-                <span>AI/ML Engineer</span>
-                <span>Systems Engineering, UNILAG</span>
+                <span>Full stack developer</span>
+                <span>Product manager</span>
+                <span>AI/ML engineer</span>
               </div>
               <p className="bio">
-                I&apos;m an AI/ML engineer and the founder of OGverse Innovations. I build AI products end to end, from the models to the backend and payments behind them, and I lead the technical teams that ship them.
+                I&apos;m a full stack developer, product manager and AI/ML engineer, and the founder of OGverse Innovations. I turn ideas into products people use, from the interface and API to the model and payments behind them.
               </p>
               <div className="cta">
                 <a className="btn btn-dark" href="#work">
@@ -116,10 +117,10 @@ export default function Home() {
               <div>
                 <div className="label mono">Skills</div>
                 <h2>
-                  Skills I build with, <em>across AI, backend and hardware.</em>
+                  Skills I build with, <em>across product, full stack, AI and hardware.</em>
                 </h2>
               </div>
-              <p>The tools and languages I use to take a product from idea to working system.</p>
+              <p>The tools I use to take a product from a brief to a working system.</p>
             </div>
             <div className="tgrid">
               {tools.map((t) => (
@@ -147,10 +148,10 @@ export default function Home() {
               </h2>
               <div className="label mono">About</div>
               <p className="lead">
-                Systems Engineering at UNILAG taught me to see the <em>whole system</em>: the model, the API, the payment flow and the people who use it.
+                Systems Engineering at UNILAG taught me to see the <em>whole system</em>: the product, the interface, the API, the model, the payment flow and the people who use it.
               </p>
               <p className="body">
-                I learned web development with DSN in 2022 and AI/ML with Digital SkillUp Africa in 2025, then founded OGverse Innovations, now registered with the CAC. Today I lead product and engineering there, lead the AI/ML squad at Techstars UNILAG, and run sponsorship and partnerships work for ASES.
+                I learned web development with DSN in 2022 and AI/ML with Digital SkillUp Africa in 2025, then founded OGverse Innovations, now registered with the CAC (BN 9710703). I work there as a full stack developer and product manager, as well as an AI/ML engineer. I also lead the AI/ML squad at Techstars UNILAG, and run sponsorship and partnerships work for ASES.
               </p>
             </div>
             <div className="stats">

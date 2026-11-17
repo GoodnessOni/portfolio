@@ -9,7 +9,7 @@ import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Every project Goodness Oni has shipped, from AI products and backends to hardware, with his role on each.",
+  description: "Every project Goodness Oni has shipped, from full stack products and AI systems to hardware, with his role on each.",
   alternates: { canonical: "./" },
 };
 
