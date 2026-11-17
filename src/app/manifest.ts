@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Goodness Oni",
     short_name: "Goodness Oni",
-    description: "AI/ML engineer and founder of OGverse Innovations.",
+    description: "AI/ML engineer and Systems Engineering student at UNILAG, Lagos. Founder of OGverse Innovations.",
     start_url: asset("/"),
     display: "standalone",
     background_color: "#fff8ea",

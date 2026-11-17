@@ -95,7 +95,7 @@ export default function Home() {
           <div className="wrap">
             <div className="label mono">Recognition</div>
             <h2 id="recognition-title">
-              Results, <em>with the certificate one click away.</em>
+              Results, <em>with the full record in my CV.</em>
             </h2>
             <div className="aw">
               {awards.map((a) => (
@@ -139,9 +139,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about">
+        <section id="about" aria-labelledby="about-title">
           <div className="wrap about">
             <div>
+              <h2 id="about-title" className="sr-only">
+                About
+              </h2>
               <div className="label mono">About</div>
               <p className="lead">
                 Systems Engineering at UNILAG taught me to see the <em>whole system</em>: the model, the API, the payment flow and the people who use it.

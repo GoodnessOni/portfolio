@@ -18,8 +18,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      # Served from https://goodnessoni.github.io/portfolio. When a custom domain is attached,
-      # set NEXT_PUBLIC_BASE_PATH to "" and NEXT_PUBLIC_SITE_URL to the new domain.
+      # Served from https://goodnessoni.github.io/portfolio.
+      # To switch to a custom domain, change only these two values, then add
+      # the domain under Settings → Pages and put it in public/CNAME:
+      #   NEXT_PUBLIC_BASE_PATH: ""
+      #   NEXT_PUBLIC_SITE_URL: https://your.domain
+      # After Google Search Console gives you an HTML-tag verification code,
+      # add the content value here (not the whole meta tag):
+      #   NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: the-content-value
       NEXT_PUBLIC_BASE_PATH: /portfolio
       NEXT_PUBLIC_SITE_URL: https://goodnessoni.github.io/portfolio
       NEXT_TELEMETRY_DISABLED: 1

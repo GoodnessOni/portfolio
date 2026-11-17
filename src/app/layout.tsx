@@ -1,16 +1,16 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import Providers from "@/components/Providers";
-import { absUrl, asset, contact, siteUrl } from "@/lib/site";
+import { absUrl, asset, contact, seo, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const sans = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const mono = Geist_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono", display: "swap" });
 const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--font-serif", display: "swap" });
 
-const title = "Goodness Oni · Founder, OGverse · AI/ML Engineer";
-const description =
-  "Goodness Oni is an AI/ML engineer and the founder of OGverse Innovations. He builds AI products end to end, from the models to the backend and payments behind them, and leads the technical teams that ship them.";
+const title = seo.title;
+const description = seo.description;
+const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl + "/"),
@@ -18,7 +18,16 @@ export const metadata: Metadata = {
   description,
   applicationName: "Goodness Oni",
   authors: [{ name: "Goodness Oni", url: siteUrl }],
-  keywords: ["Goodness Oni", "OGverse Innovations", "AI/ML engineer", "backend engineer", "Lagos", "UNILAG", "Systems Engineering"],
+  keywords: [
+    "Goodness Oni",
+    "AI/ML engineer",
+    "Systems Engineering",
+    "UNILAG",
+    "University of Lagos",
+    "Lagos",
+    "OGverse Innovations",
+    "backend engineer",
+  ],
   alternates: { canonical: "./" },
   openGraph: {
     type: "website",
@@ -26,10 +35,15 @@ export const metadata: Metadata = {
     siteName: "Goodness Oni",
     title,
     description,
-    images: [{ url: absUrl("/og.png"), width: 1200, height: 630, alt: "Goodness Oni, Systems thinker. AI builder." }],
+    images: [{ url: absUrl("/og.png"), width: 1200, height: 630, alt: seo.ogImageAlt }],
     locale: "en_NG",
   },
-  twitter: { card: "summary_large_image", title, description, images: [absUrl("/og.png")] },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [{ url: absUrl("/og.png"), alt: seo.ogImageAlt }],
+  },
   icons: {
     icon: [
       { url: asset("/favicon.svg"), type: "image/svg+xml" },
@@ -38,6 +52,7 @@ export const metadata: Metadata = {
     apple: asset("/apple-touch-icon.png"),
   },
   robots: { index: true, follow: true },
+  ...(googleVerification ? { verification: { google: googleVerification } } : {}),
 };
 
 export const viewport: Viewport = { themeColor: "#fff8ea", width: "device-width", initialScale: 1 };
@@ -49,9 +64,10 @@ const jsonLd = {
   alternateName: "Goodness Oni",
   url: siteUrl,
   image: absUrl("/img/portrait.webp"),
-  jobTitle: "Founder & CEO, OGverse Innovations; AI/ML Engineer",
+  description,
+  jobTitle: "AI/ML Engineer; Systems Engineering student, University of Lagos; Founder & CEO, OGverse Innovations",
   worksFor: { "@type": "Organization", name: "OGverse Innovations" },
-  alumniOf: { "@type": "CollegeOrUniversity", name: "University of Lagos" },
+  affiliation: { "@type": "CollegeOrUniversity", name: "University of Lagos" },
   address: { "@type": "PostalAddress", addressLocality: "Lagos", addressCountry: "NG" },
   email: `mailto:${contact.email}`,
   sameAs: [contact.github, contact.linkedin],
